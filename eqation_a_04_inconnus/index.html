@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Reolution d'une equation a 04 inconnus</title>
+</head>
+<body>
+    <div class="image"><img src="img.jpg" alt="equation"></div>
+
+    <div class="scan">
+        <form name="form1">
+            <fieldset>
+                <legend>Saisir ici le coefficients</legend>
+                
+                <div id="block1">
+                    <input type="number" value="" name="a0" class="coeff" id="a0"><label for="a0" id="a0"> w </label><span> + </span>
+                    <input type="number" value="" name="a1" class="coeff" id="a1"><label for="a1"> x </label><span> + </span>
+                    <input type="number" value="" name="a2" class="coeff" id="a2"><label for="a2"> y </label><span> + </span>
+                    <input type="number" value="" name="a3" class="coeff" id="a3"><label for="a3"> z </label><span> = </span>
+                    <input type="number" value="" name="r0" class="coeff" id="r0"><br>
+    
+                    <input type="number" value="" name="b0" class="coeff" id="b0"><label for="b0"> w </label><span> + </span>
+                    <input type="number" value="" name="b1" class="coeff" id="b1"><label for="b1"> x </label><span> + </span>
+                    <input type="number" value="" name="b2" class="coeff" id="b2"><label for="b2"> y </label><span> + </span>
+                    <input type="number" value="" name="b3" class="coeff" id="b3"><label for="b3"> z </label><span> = </span>
+                    <input type="number" value="" name="r1" class="coeff" id="r1"><br>
+
+                    <input type="number" value="" name="c0" class="coeff" id="c0" required><label for="c0"> w </label><span> + </span>
+                    <input type="number" value="" name="c1" class="coeff" id="c1" required><label for="c1"> x </label><span> + </span>
+                    <input type="number" value="" name="c2" class="coeff" id="c2" required><label for="c2"> y </label><span> + </span>
+                    <input type="number" value="" name="c3" class="coeff" id="c3" required><label for="c3"> z </label><span> = </span>
+                    <input type="number" value="" name="r2" class="coeff" id="r2" required><br>
+
+                    <input type="number" value="" name="d0" class="coeff" id="d0" required><label for="d0"> w </label><span> + </span>
+                    <input type="number" value="" name="d1" class="coeff" id="d1" required><label for="d1"> x </label><span> + </span>
+                    <input type="number" value="" name="d2" class="coeff" id="d2" required><label for="d2"> y </label><span> + </span>
+                    <input type="number" value="" name="d3" class="coeff" id="d3" required><label for="d3"> z </label><span> = </span>
+                    <input type="number" value="" name="r3" class="coeff" id="r3" required><br>
+            
+                </div>
+                <div id="block2">
+                    <input type="reset" value="reinitialiser" style="float: left;" class="reset"><br>
+                    <input type="button" value="resoudre" class="resoudre" onclick="valid();refresh();calculer();afficheResltat()">
+                </div>
+                <p class="texte" id="block3"> clickez sur "resoudre" pour resoudre ce <br> systeme d'equation</p>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="resultat">
+        <form>
+            <fieldset>
+                <legend>resultat</legend>
+                <label for="W"> W = </label><input type="number" name="w" id="w" readonly>
+                <label for="X"> X = </label><input type="number" name="X" id="x" readonly>
+                <label for="Y"> Y = </label><input type="number" name="Y" id="y" readonly>
+                <label for="Z"> Z = </label><input type="number" name="Z" id="z" readonly>
+            </fieldset>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

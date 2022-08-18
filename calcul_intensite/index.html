@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🔌 Calcul d'intensite</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="int">
+    <div class="image">
+        <img src="/calcul_intensite/circuit.jpg" alt="">
+    </div>
+
+    <form class="scan">
+        <fieldset>
+            <legend>les données</legend>
+            <p class="text">
+                veuillez entrer ici les valeurs de r1,r2,r3,r4,U pour calculer i1,i2,i3,i4,u1,u2,u3,u4 <br>
+                quand c'est fini apuiez sur resoudre pour avoir les resultats
+            </p>
+            <div class="button">
+                <input type="button" value="calculer" id="calculer" onclick="refresh();calcul();afficherResultat()">
+                <input type="button" value="reinitialiser" id="reinitialiser">
+            </div>
+            <div class="donne">
+                <label>r1= </label><input type="number" id="r1">
+                <label>r2= </label><input type="number" id="r2">
+                <label>r3= </label><input type="number" id="r3">
+                <label>r4= </label><input type="number" id="r4">
+                <label>U= </label><input type="number" id="U">
+            </div>
+        </fieldset>
+    </form>
+
+    <form class="resultat">
+        <fieldset>
+            <legend>Resultat du calcul</legend>
+            <div class="intensite">
+                <p>Les intensites:</p>
+                <label>i1= </label><input type="number" value="" id="i1" readonly>
+                <label>i2= </label><input type="number" value="" id="i2" readonly>
+                <label>i3= </label><input type="number" value="" id="i3" readonly>
+                <label>i4= </label><input type="number" value="" id="i4" readonly>
+            </div>
+            <div class="tension">
+                <p>les tensions:</p>
+                <label>u1= </label><input type="number" value="" id="u1" readonly>
+                <label>u2= </label><input type="number" value="" id="u2" readonly>
+                <label>u3= </label><input type="number" value="" id="u3" readonly>
+                <label>u4= </label><input type="number" value="" id="u4" readonly>
+            </div>
+        </fieldset>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

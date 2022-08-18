@@ -1,0 +1,147 @@
+html{
+    width: 100%;overflow-x: hidden;
+    background-color: gray;
+}
+.strong{
+    margin-left: 20%;
+    width: 60%;
+    position: relative;
+    display: inline-block;
+    height: 55px;
+}
+strong{
+    position: absolute;top: 0;
+    display: block;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+}
+strong:hover{
+    transform: rotateY('90deg');
+    text-decoration: none;
+}
+strong.title:hover span{
+    color: #ff6600;
+    font-weight: bolder;
+    border-bottom:4px solid #ff6600;
+}
+video{
+    position: absolute;top: 0;left: 0;bottom: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.section{
+    position: relative;
+}
+div.title{
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.8em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkolivegreen;
+    line-height: 50px;
+}
+ul{
+    display: inline-block;
+    width: 500px;
+    margin-left: 50px;
+    position: relative;
+    list-style: none;
+    text-decoration: none;
+}
+ul li{
+    cursor: pointer;
+    font-size:larger;
+    font-family: fantasy;
+    padding-top: 20px;
+    line-height: 40px;
+}
+.title:hover span{
+    /*font-size: 1.4em;*/
+    font-weight: bold;
+    color: brown;
+}
+
+/**/
+#prev,
+#next{
+    font-size: 2em;
+    color: white;
+    z-index: 999;
+    background-color: black;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+#prev:hover,
+#next:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    }
+#prev{
+    top: 50%;left: 0%;
+}
+#next{
+    top: 50%;right: 0%;
+}
+section{
+    margin: 0;padding: 0;
+    width: 100%;
+    height: 800px;
+    position: absolute;top: 0;
+}
+.acc{
+    z-index: 990;
+    right: 0%;
+}
+.int{
+    left: -100%;
+}
+.inc4{
+    left: -100%;
+}
+.inc3{
+    left: -100%;
+}
+.deg2{
+    left: -100%;
+}
+.img10{
+    left: -100%;
+}
+/*Les animations*/
+@keyframes toLeft {
+    0%{
+        left: 0;
+    }
+    100%{
+        left:-100%;
+    }
+}
+@keyframes toRight {
+    0%{
+        left: 0;
+    }
+    100%{
+        left:100%;
+    }
+}
+@keyframes fromLeft {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes fromRight {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}

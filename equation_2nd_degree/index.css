@@ -1,0 +1,77 @@
+body{
+    background: linear-gradient(white, #56326b);
+    height: 800px;
+}
+.image,
+.scan,
+.resultat,
+.acceuil{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+.equation{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.btn-resoudre{
+    margin-left: 5%;
+    float: left;
+}
+.btn-reinitialiser{
+    margin-right: 8%;
+    float: right;
+}
+.btn-reinitialiser,
+.btn-resoudre{
+    margin-top: 20px;
+}
+.btn{
+    width: 100%;
+    float: left;
+}
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+    font-size: 1.2em;
+    clear: both;
+    text-align: center;
+}
+legend{
+    color: #85000b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.x1{
+    margin-left: 5%;
+    float: left;
+}
+.x2{
+    margin-right: 8%;
+    float: right;
+}
+.resultat{
+    text-align: center;
+}
+.d_neg{
+    transform: translateY(-5px);
+    visibility: hidden;
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue;
+    position: relative;top: 0;
+    padding: 0;margin: 0;
+}
+.d_0{
+    visibility: hidden;
+    font-size: 1.5em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue;
+    transform: translate(150px,-30px);
+    position: relative;top: 0;
+    padding: 0;margin: 0;
+}
+label{
+    font-weight: bolder;
+    color: darkblue;
+}

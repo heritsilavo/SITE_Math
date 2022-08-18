@@ -1,0 +1,59 @@
+body{
+    background:linear-gradient(white,rgb(255, 60, 60));
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image,
+.scan,
+.resultat{
+    margin: auto;
+    width: 70%;
+}
+.image{
+    height: 250px;
+    background-color: green;
+}
+.image img{
+    width: 100%;
+    height: 250px;
+}
+legend{
+    text-align: center;
+}
+.block1{
+    float: left;
+    width: 45%;
+}
+.block2{
+    margin-top: 15px;
+    position: relative;
+    clear: both;
+    width: 10%;
+}
+.block3{
+    float: right;
+    width: 39%;
+}
+.block1,
+.block2,
+.block3{
+    margin-left: 10px;
+    display: inline-block;
+}
+.coeff{
+    margin-top: 10px;
+    width: 15%;
+}
+.resoudre,
+.reset{
+    width: 100%;
+    height: 45px;
+    position: absolute;
+}
+.block3 p{
+    font-size: large;
+}
+.resultat label{
+    margin-left: 7%;
+}

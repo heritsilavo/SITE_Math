@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolution d'une equation second degree</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="image">
+        <img src="equation.jpg" alt="eqation">
+    </div>
+
+    <!---->
+    <div class="scan">
+        <form>
+            <fieldset>
+                <legend>Definir ici l'equation</legend>
+                
+                <div class="equation">
+                    <input type="number" name="coeff1"><label for="coeff1"> X<sup>2</sup>+ </label>  
+                    <input type="number" name="coeff2"><label for="coeff2">X+</label>  
+                    <input type="number" name="coeff3">=
+                    <input type="number" name="0" value="0" readonly>
+                </div>
+
+                <div class="btn">
+                    <input type="button" value="resoudre" onclick="valid();refresh();calcul()" class="btn-resoudre">
+                    <input type="button" value="reinitialiser" class="btn-reinitialiser">
+                </div>
+
+                <p class="text">
+                    appuiez sur resoudre pour recuperer les(la) solution de cet eqaution <br><br>
+                    appuiez sur reinitialiser pour recommencer
+                </p>
+            </fieldset>
+        </form>
+    </div>
+
+    <!---->
+    <div class="resultat">
+        <form>
+            <fieldset style="height: 80px;">
+                <legend>Affichage des(du) resultat(s)</legend>
+                <span class="x1"><label for="x'">X'</label><input type="number" name="x'" readonly></span>
+                <span class="x2"><label for="x''">X''</label><input type="number" name="Y''" readonly></span>
+                <p class="d_neg">cet equation n'a pas de solution !!</p>
+                <p class="d_0">cet equation e une solution double</p>
+            </fieldset>
+        </form>
+    </div>
+    <!---->
+    <script src="index.js"></script>
+</body>
+</html>

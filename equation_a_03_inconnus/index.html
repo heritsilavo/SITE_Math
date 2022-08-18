@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="image">
+        <img src="/equation_a_03_inconnus/equation.jpg" alt="image">
+    </div>
+    
+    <form class="scan">
+        <fieldset>
+            <legend>Saisie des valeurs</legend>
+            <!--l'equation-->
+            <div class="block1">
+                    <input type="number" value="" class="coeff" id="a0"><label> x </label><span> + </span>
+                    <input type="number" value="" class="coeff" id="a1"><label> y </label><span> + </span>
+                    <input type="number" value="" class="coeff" id="a2"><label> z </label><span> = </span>
+                    <input type="number" value="" class="coeff" id="r0"><br>
+    
+                    <input type="number" value="" class="coeff" id="b0"><label> x </label><span> + </span>
+                    <input type="number" value="" class="coeff" id="b1"><label> y </label><span> + </span>
+                    <input type="number" value="" class="coeff" id="b2"><label> z </label><span> = </span>
+                    <input type="number" value="" class="coeff" id="r1"><br>
+
+                    <input type="number" value="" class="coeff" id="c0"><label> x </label><span> + </span>
+                    <input type="number" value="" class="coeff" id="c1"><label> y </label><span> + </span>
+                    <input type="number" value="" class="coeff" id="c2"><label> z </label><span> = </span>
+                    <input type="number" value="" class="coeff" id="r2"><br>
+                </div>
+            <!--les boutons-->
+            <div class="block2">
+                <input type="button" value="resoudre" class="resoudre" onclick="valid();refresh();calculer();afficheResltat()">
+                <input type="button" value="reinitialiser" class="reset">
+            </div>
+            <!--texte-->
+            <div class="block3">
+                <p>
+                    cliquez sur resoudre pour <br>resoudre ce systeme d'equation
+                </p>
+            </div>
+        </fieldset>
+    </form>
+    
+    <form class="resultat">
+        <fieldset>
+            <legend>affichage des resultats</legend>
+            <label for="X"> X = </label><input type="number" name="X" id="x" readonly>
+            <label for="Y"> Y = </label><input type="number" name="Y" id="y" readonly>
+            <label for="Z"> Z = </label><input type="number" name="Z" id="z" readonly>
+        </fieldset>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
