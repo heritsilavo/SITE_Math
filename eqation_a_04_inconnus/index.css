@@ -1,4 +1,5 @@
 *{
+    transition: all 1s;
     position: relative;
     margin: auto;
 }
@@ -8,15 +9,15 @@ body{
 }
 .image{
     margin-top: 20px;
-    width: 69%;
+    width: 75%;
     height: auto;
     overflow:hidden;
 }
 .coeff{
-    width: 50px;
+    width: 40px;
 }
 .scan,.resultat{
-    width: 70%;
+    width: 75%;
 }
 .resoudre{
     text-decoration: none;
@@ -34,7 +35,7 @@ body{
     width: 80px;
 }
 .texte{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:cursive;
     font-size: 1.6em;
     color: orangered;
 }
@@ -45,17 +46,129 @@ body{
 #block2{
     margin-top: 10px;
     padding: 5px;
-    width: 15%px;
     height: 100px;
 }
 #block3{
-    width: 45%;
+    width: 43%;
     float: right;
 }
 #block1,#block2,#block3{
     display: inline-block;
 }
 legend{
+    font-family: monospace;
     color: chocolate;
     font-size: 1.6em;
+}
+label{
+    font-family: cursive;
+}
+
+@media screen and (max-width: 1170px) {
+    .image{
+        overflow-x: scroll;
+        scrollbar-base-color: black;
+    }
+    .res{
+        width: 15%;
+    }
+}
+@media screen and (max-width: 1120px) {
+    .image{
+        overflow-x: scroll;
+    }
+    .coeff{
+        width: 30px;
+    }
+    #block1{
+        float: left;
+        width: 50%;
+    }
+    #block2{
+        margin-top: 10px;
+        padding: 5px;
+        height: 100px;
+    }
+    #block3{
+        width: 38%;
+        float: right;
+    }
+    .texte{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 880px) {
+    .image{
+        overflow-x: scroll;
+    }
+    .coeff{
+        width: 20px;
+    }
+    #block1{
+        float: left;
+        width: 50%;
+    }
+    #block2{
+        margin-top: 10px;
+        padding: 5px;
+        height: 100px;
+    }
+    #block3{
+        width: 34%;
+        float: right;
+    }
+    .texte{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 745px) {
+    .image{
+        overflow-x: scroll;
+    }
+    .coeff{
+        width: 15px;
+    }
+    #block1{
+        float: left;
+        width: 50%;
+    }
+    #block2{
+        margin-top: 10px;
+        padding: 1px;
+        height: 70px;
+    }
+    #block3{
+        width: 30%;
+        float: right;
+    }
+    .texte{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 676px) {
+    .image{
+        overflow-x: scroll;
+    }
+    .coeff{
+        width: 35px;
+    }
+    #block1{
+        float: left;
+        width: 100%;
+    }
+    #block2{
+        margin-top: 10px;
+        padding: 1px;
+        height: 70px;
+    }
+    #block3{
+        width: 30%;
+        float: right;
+    }
+    .res{
+        width: 20px;
+    }
+    html{
+        z-index: 100000;
+    }
 }

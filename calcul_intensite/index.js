@@ -38,16 +38,16 @@ function refresh(){
 }
 
 function calcul(){
-    req = r1 + r3 + ((r2*r4)/(r2+r4));
+    req = r1 + r3 + ((r2*r4)/(r2+r4));alert(req);
     /*i1*/i[0]=U/req;
     /*i2*/i[1]=(r4*i[0])/(r4+r2);
-    /*i3*/i[2]=i[0]-i[1];
-    /*i4*/i[3]=i[0];
+    /*i3*/i[2]=i[0];
+    /*i4*/i[3]=i[0]-i[1];
         
-    /*u1*/u[0]=i[0]/r1;
-    /*u2*/u[1]=i[1]/r2;
-    /*u3*/u[2]=i[2]/r3;
-    /*u4*/u[3]=i[3]/r4;
+    /*u1*/u[0]=U-(r2*i[1])-(r3*i[2]);
+    /*u2*/u[1]=U-u[0]-(r3*i[2]);
+    /*u3*/u[2]=U-u[0]-u[1];
+    /*u4*/u[3]=u[1];
 }
 
 function afficherResultat(){

@@ -8,13 +8,13 @@
     <title>Mon projet JavaScript</title>
 </head>
 <body>
-<section class="acc">
+<section class="acc" scrolling="no">
     <video src="back.mp4" autoplay loop muted></video>
     <div class="section">
             <div class="strong">
-                <strong class="title">PRESENTATION DE MON PROJET</strong>
+                <strong class="title1"><span>PRESENTATION</span> <span>DE</span> <span>MON</span> <span>PROJET</span></strong>
+                <strong class="title2"><span>PRESENTATION</span> <span>DE</span> <span>MON</span> <span>PROJET</span></strong>
             </div><br><br>
-            <div class="title">Veillez cliquer sur celle qui vous interresse!!</div>
             <ul>
                 <li>Resoudre un systeme de 04 equation a 04 inconnus</li>
                 <li>Resoudre un systeme de 03 equation a 03 inconnus</li>
@@ -22,13 +22,48 @@
                 <li>Afficher des images qui tournent en faisant un cercle</li>
                 <li>Calcul d'un intensite de courant</li>
             </ul>
+            
+            <div class="choix">
+                <div class="center" onclick="choisir()">
+                    <p>appuiez içi <br> pour en <br> choisir une</p>
+                </div>
+                <div class="cote" id="inc4"><p>resolution <br> des 4 eqation a 4 inconnus</p></div>
+                <div class="cote" id="inc3"><p>resolution <br> des 3 eqation a 3 inconnus</p></div>
+                <div class="cote" id="deg2"><p>equation second degre</p></div>
+                <div class="cote" id="img10"><p>panneau publicitaire</p></div>
+                <div class="cote" id="int"><p>calcl <br> d'intensite et de tension</p></div>
+            </div>
+            <p class="bas">a propos de nous <br>↡</p>
+            <div class="moi">
+                <span class="nom">NOM & Prenom : </span>ANDRIANTSILAVINA Tsiferana Heritsilavo <br>
+                <span class="nom">N° :</span>2632 <br><br>
+                <span class="nom">NOM & Prenom : </span> <br>
+                <span class="nom">N° :</span>
+            </div>
     </div>
 </section>
-<section class="inc4"><iframe src="eqation_a_04_inconnus/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe></section>
-<section class="inc3"><iframe src="equation_a_03_inconnus/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe></section>
-<section class="deg2"><iframe src="equation_2nd_degree/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe></section>
-<section class="img10"><iframe src="images_animes/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe></section>
-<section class="int"><iframe src="calcul_intensite/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe></section>
+
+<section class="inc4" id="divs">
+    <p class="p1">retourner a l'acceuil</p>
+    <iframe src="eqation_a_04_inconnus/index.html" frameborder="0" scrolling="no" width="100%" height="800px">lorem</iframe>
+</section>
+
+<section class="inc3" id="divs">
+    <p class="p2">retourner a l'acceuil</p>
+    <iframe src="equation_a_03_inconnus/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe>
+</section>
+<section class="deg2" id="divs">
+    <p class="p3">retourner a l'acceuil</p>
+    <iframe src="equation_2nd_degree/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe>
+</section>
+<section class="img10" id="divs">
+    <p class="p4">retourner a l'acceuil</p>
+    <iframe src="images_animes/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe>
+</section>
+<section class="int" id="divs">
+    <p class="p5">retourner a l'acceuil</p>
+    <iframe src="calcul_intensite/index.html" frameborder="0" scrolling="no" width="100%" height="800px"></iframe>
+</section>
 
 <div id="prev">⇦</div>
 <div id="next">⇨</div>

@@ -5,65 +5,75 @@ body{
 }
 section{
     width: 100%;
-    height: 600px;
+    height: 500px;
 }
 .img{
     text-align: center;
     font-size: 2em;
     font-family: fantasy;
-    color: #fff;
+    color: #ffffff;
     border: 2px solid red;
     width: 20%;
     height: 150px;
     position: absolute;
 }
 #img0{
-    bottom: 5%;
+    background-size: cover;
+    bottom: 15%;
     left: 40%;
     z-index: 99;
 }
 #img1{
-    bottom: 20%;
+    background-size: cover;
+    bottom: 30%;
     left: 25%;
     z-index: 88;
 }
 #img2{
-    bottom: 35%;
+    background-size: cover;
+    bottom: 45%;
     left: 15%;
     z-index: 77;
 }
 #img3{
-    bottom: 45%;
+    background-size: cover;
+    bottom: 55%;
     left: 20%;
     z-index: 66;
 }
 #img4{
-    bottom: 55%;
+    background-size: cover;
+    bottom: 65%;
     left: 26%;
     z-index: 55;
 }
 #img5{
-    bottom: 65%;
+    background-size: cover;
+    bottom: 75%;
     left: 41%;
     z-index: 44;
 }
 #img6{
-    bottom: 55%;
+    background-size: cover;
+    bottom: 65%;
     left: 55%;
     z-index: 55;
 }
 #img7{
-    bottom: 45%;
+    background-size: cover;
+    bottom: 55%;
     left: 60%;
     z-index: 66;
 }
 #img8{
-    bottom: 35%;
+    background-size: cover;
+    bottom: 45%;
     left: 65%;
     z-index: 77;
 }
 #img9{
-    bottom: 20%;
+    background-size: cover;
+    bottom: 30%;
     left: 56%;
     z-index: 88;
 }

@@ -1,3 +1,6 @@
+*{
+    transition: all 1s;
+}
 body{
     background:linear-gradient(white,rgb(255, 60, 60));
     height: 800px;
@@ -19,6 +22,9 @@ body{
     height: 250px;
 }
 legend{
+    font-size: large;
+    color: brown;
+    font-family: monospace;
     text-align: center;
 }
 .block1{
@@ -34,6 +40,10 @@ legend{
 .block3{
     float: right;
     width: 39%;
+}
+.block3 p{
+    color: rgb(255, 38, 0);
+    font-family: cursive;
 }
 .block1,
 .block2,
@@ -56,4 +66,33 @@ legend{
 }
 .resultat label{
     margin-left: 7%;
+}
+label{
+    font-family: cursive;
+}
+@media screen and (max-width: 1210px) {
+    .image{
+        overflow-x: scroll;
+    }
+    .res{
+        width: 15%;
+    }
+}
+@media screen and (max-width: 1015px) {
+    .coeff{
+        width: 10%;
+    }
+}
+@media screen and (max-width: 965px) {
+    .block1{
+        width: 100%;
+    }
+    .block2 input{
+        width: 80px;
+    }
+}
+@media screen and (max-width: 565px) {
+    .res{
+        width: 10%;
+    }
 }

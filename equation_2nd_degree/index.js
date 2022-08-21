@@ -1,36 +1,40 @@
 var coeff = [1,1,1];
 
 function valid(){
-    var complet = false;
+    var complet = true;
     for(var j=0 ; j<3; j++){
         if(document.getElementsByTagName("input")[j].value == ""){
-            complet = true;
+            complet = false;
         }
     }
-    if(complet==true){
+    return complet;
+}
+
+function refresh(){
+    if(valid()){
+        for (let i=0; i<3; i++) {
+            coeff[i]=Number(document.querySelectorAll("input")[i].value); 
+        }
+    }else{
         alert("ERREUR!! Veullez remplir tous les coefficients !");
     }
 }
 
-function refresh(){
-    for (let i=0; i<3; i++) {
-        coeff[i]=Number(document.querySelectorAll("input")[i].value); 
-    }
-}
-
 function calcul(){
-    var delta = Math.pow(coeff[1], 2) - (4*coeff[0]*coeff[2])
-    if(delta > 0){//si delta > O
-        document.querySelectorAll("input")[6].value= (-coeff[1]+Math.sqrt(delta))/(2*coeff[0]);
-        document.querySelectorAll("input")[7].value= (-coeff[1]-Math.sqrt(delta))/(2*coeff[0]);
-    }else if(delta==0){//si delta = 0
-        document.querySelectorAll("input")[6].value= (-coeff[1])/(2*coeff[0]);
-        document.querySelector(".x2").style.display = "none";
-        document.querySelector(".d_0").style.visibility = "visible";
-    }else{//si delta < 0
-        document.querySelector(".x1").style.display = "none";
-        document.querySelector(".x2").style.display = "none";
-        document.querySelector(".d_neg").style.visibility = "visible";
+    if(valid()){
+            var delta = Math.pow(coeff[1], 2) - (4*coeff[0]*coeff[2])
+        if(delta > 0){//si delta > O
+            document.querySelectorAll("input")[6].value= (-coeff[1]+Math.sqrt(delta))/(2*coeff[0]);
+            document.querySelectorAll("input")[7].value= (-coeff[1]-Math.sqrt(delta))/(2*coeff[0]);
+        }else if(delta==0){//si delta = 0
+            document.querySelectorAll("input")[6].value= (-coeff[1])/(2*coeff[0]);
+            document.querySelector(".x2").style.display = "none";
+            document.querySelector(".d_0").style.visibility = "visible";
+        }else{//si delta < 0
+            document.querySelector(".x1").style.display = "none";
+            document.querySelector(".x2").style.display = "none";
+            document.querySelector(".d_neg").style.visibility = "visible";
+        }
     }
 }
 
